@@ -1,4 +1,5 @@
 # NgPokemonApp
+<<<<<<< HEAD
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+YT TUTO [Angular Tutorial Français pour Débutant - Cours complet 9h [2022]] 
+>>>>>>> daab1f484a6e4b125cf58da93544ae469aec5c48

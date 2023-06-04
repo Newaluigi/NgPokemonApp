@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
       console.log(`Vous avez demandé le pokémon ${pokemon.name}`);
       this.pokemonSelected = pokemon;
     } else {
-      alert(`Vous avez demandé un pokemon non répertorié`);
+      console.log(`Vous avez demandé un pokemon non répertorié`);
       this.pokemonSelected = pokemon;
     }
   }

@@ -9,13 +9,14 @@ body {
 .pokemon-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pokemonCard {
     border: 2px solid transparent;
     margin: 1rem;
     display: flex;
-    max-width: 26rem;
+    width: 24rem;
     /* grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:

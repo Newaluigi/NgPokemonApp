@@ -8,11 +8,12 @@
 
 
 <div class="pokemon-list">
-    <div class="pokemonCard" *ngFor="let pokemon of pokemonList" pkmnBorderCard="red">
+    <div class="pokemonCard" *ngFor="let pokemon of pokemonList" pkmnBorderCard>
         <img [src]=pokemon.picture alt="{{pokemon.name}}" class="pokemonImg">
         <div class="pokemonInfo">
             <p class="pokemonTitle">{{pokemon.name}}</p>
-            <p class="pokemonDate">{{pokemon.created}}</p>
+            <p class="pokemonDate">{{pokemon.created | date: "dd/MM/yyyy" }}</p>
+            <span class="{{ type | pokemonTypeColor}}" *ngFor="let type of pokemon.types">{{type}}</span>
         </div>
     </div>
 </div>

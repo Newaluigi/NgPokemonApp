@@ -1,1 +1,24 @@
-<p>list-pokemon works!</p>
+<div class="pokemon-list">
+    <div (click)="goToPokemon(pokemon)" class="pokemonCard" *ngFor="let pokemon of pokemonList" pkmnBorderCard>
+        <img [src]=pokemon.picture alt="{{pokemon.name}}" class="pokemonImg">
+        <div class="pokemonInfo">
+            <p class="pokemonTitle">{{pokemon.name}}</p>
+            <p class="pokemonDate">{{pokemon.created | date: "dd/MM/yyyy" }}</p>
+            <span class="{{ type | pokemonTypeColor}}" *ngFor="let type of pokemon.types">{{type}}</span>
+        </div>
+    </div>
+</div>
+
+<!-- <p>{{ pokemonList[0].name }}</p>
+<img src="{{pokemonList[0].picture}}" alt="{{ pokemonList[0].name }}">
+<p>{{ pokemonList[1].name }}</p>
+<p>{{ pokemonList[2].name }}</p>
+<p>{{ pokemonList[3].name }}</p>
+<p>{{ pokemonList[4].name }}</p>
+<p>{{ pokemonList[5].name }}</p>
+<p>{{ pokemonList[6].name }}</p>
+<p>{{ pokemonList[7].name }}</p>
+<p>{{ pokemonList[8].name }}</p>
+<p>{{ pokemonList[9].name }}</p>
+<p>{{ pokemonList[10].name }}</p>
+<p>{{ pokemonList[11].name }}</p> -->

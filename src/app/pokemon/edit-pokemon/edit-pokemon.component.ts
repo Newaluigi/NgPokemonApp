@@ -6,7 +6,7 @@ import { PokemonService } from "../pokemon.service";
 @Component({
   selector: "app-edit-pokemon",
   template: `
-    <h2>Editer {{ pokemon?.name }}</h2>
+    <h2 class="center">Editer {{ pokemon?.name }}</h2>
     <p *ngIf="pokemon" class="center">
       <img [src]="pokemon.picture" alt="" />
     </p>

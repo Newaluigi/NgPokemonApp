@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { Pokemon } from "../pokemon";
 import { PokemonService } from "../pokemon.service";
-import { Router } from "@angular/router";
 
 @Component({
   selector: "app-pokemon-form",
@@ -10,13 +10,14 @@ import { Router } from "@angular/router";
 })
 export class PokemonFormComponent implements OnInit {
   @Input() pokemon: Pokemon;
-
   types: string[];
+  isAddForm: boolean;
 
   constructor(private pokemonService: PokemonService, private router: Router) {}
 
   ngOnInit() {
     this.types = this.pokemonService.getPokemonTypeList();
+    this.isAddForm = this.router.url.includes("add");
   }
 
   hasType(type: string): boolean {

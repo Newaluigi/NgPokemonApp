@@ -1,4 +1,6 @@
+<app-search-pokemon></app-search-pokemon>
 <div class="pokemon-list">
+
     <div (click)="goToPokemon(pokemon)" class="pokemonCard" *ngFor="let pokemon of pokemonList" pkmnBorderCard>
         <img [src]=pokemon.picture alt="{{pokemon.name}}" class="pokemonImg">
         <div class="pokemonInfo">

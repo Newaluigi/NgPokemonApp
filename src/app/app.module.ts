@@ -12,6 +12,7 @@ import { PokemonModule } from "./pokemon/pokemon.module";
 import { FormsModule } from "@angular/forms";
 import { InMemoryDataService } from "./in-memory-data.service";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
     // ListPokemonComponent,
     // DetailPokemonComponent,
     PageNotFoundComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
